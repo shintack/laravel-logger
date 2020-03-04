@@ -72,7 +72,7 @@ Laravel logger can work out the box with or without the following roles packages
 1. From your projects root folder in terminal run:
 
 ```bash
-    composer require shintack/laravel-logger
+    composer require shintack/laravel-logger:dev-master
 ```
 
 2. Register the package
@@ -112,7 +112,7 @@ Laravel logger can work out the box with or without the following roles packages
 1. From your projects root folder in terminal run:
 
 ```bash
-    composer require shintack/laravel-logger
+    composer require shintack/laravel-logger:dev-master
 ```
 
 2. Register the package

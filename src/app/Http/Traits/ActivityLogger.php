@@ -101,6 +101,15 @@ trait ActivityLogger
             'referer'       => $data['referer'],
             'methodType'    => $data['methodType'],
         ]);
+
+        if (config('LaravelLogger.dumpLog')) {
+            $string = '';
+            $separator = config('LaravelLogger.dumpLogSeparator');
+            foreach ($data as $key => $value) {
+                $string .= $key . '=' . $value . $separator;
+            }
+            Log::info($string);
+        }
     }
 
     /**

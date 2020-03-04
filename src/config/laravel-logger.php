@@ -2,6 +2,9 @@
 
 return [
 
+    'dumpLog'  => env('LARAVEL_LOGGER_DUMP_LOG', false),
+    'dumpLogSeparator'  => env('LARAVEL_LOGGER_DUMP_LOG_SEPARATOR', '~$~'),
+
     /*
     |--------------------------------------------------------------------------
     | Laravel Logger Database Settings
